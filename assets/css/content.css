@@ -199,9 +199,9 @@ img {
 }
 
 .like-dislike-btn {
-    padding: 10px 20px;
-    border-radius: 35px;
-    background: #f2f2f2;
+    display: flex;
+    border-radius: 27px;
+    overflow: hidden;
 }
 
 .like-icon i {
@@ -210,6 +210,43 @@ img {
 
 .dislike-icon {
     padding-left: 10px;
+}
+
+.share-btn {
+    padding: 7px 16px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+
+.share-btn i {
+    padding-right: 10px;
+}
+
+.share-btn:hover {
+    background:#e5e5e5;
+}
+
+.p {
+    padding: 7px 16px;
+}
+
+.like-btn {
+    background-color: #f2f2f2;
+    display: flex;
+
+}
+
+.like-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.dislike-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.dislike-btn {
+    background-color: #f2f2f2;
+    display: flex;
 }
 
 .action-btn {
