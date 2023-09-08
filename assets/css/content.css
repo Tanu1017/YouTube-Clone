@@ -26,8 +26,6 @@ a{
 
 .row {
     display: flex;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 
 .flex-wrap {
@@ -35,7 +33,6 @@ a{
 }
 
 .col {
-    padding-left: 15px;
     padding-right: 15px;
 }
 
@@ -124,6 +121,8 @@ img {
     display: flex;
     gap: 10px;
     padding: 7px 0;
+    white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 .search-icon {
@@ -189,6 +188,7 @@ img {
 .top-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .action {
@@ -261,7 +261,6 @@ img {
 
 .card-img img {
     width: 400px;
-    height: 116px;
     border-radius: 5px;
 }
 
@@ -282,6 +281,62 @@ img {
 .view {
     padding-top: 3px;
 }
+
 .view a {
     color: gray;
+}
+
+.mobile-header-left {
+    width: 50%;
+}
+
+.mobile-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    gap: 5px;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+
+@media (max-width:1024px) {
+    /* Tablet Width */
+    .tablet-col-100 { width:100%;}
+    .tablet-col-50 { width: 50%;}
+    .tablet-col-33 { width: 33.33%;}
+
+    .tablet-display-none { display: none;}
+    .tablet-display { display: block;}
+
+    .tablet-card-v { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pt-10 { padding-top: 10px;}
+    
+}
+
+@media (max-width:768px) {
+    /* Mobile Width */
+    .mobile-col-100 { width:100%;}
+    .mobile-col-50 { width: 50%;}
+
+    .mobile-display-none { display: none;}
+    .mobile-display { display: block;}
+
+    .mobile-pr-10 { padding-right: 10px;}
+
+    .mobile-row {
+        display: flex;
+        flex-direction: column;
+    }
 }
