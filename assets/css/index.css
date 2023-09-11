@@ -156,6 +156,7 @@ img {
     padding-bottom: 15px;
     white-space: nowrap;
     padding-top: 10px;
+    overflow: hidden;
 }
 
 .search-icon {
@@ -320,12 +321,14 @@ img {
 }
 
 .title {
+    line-height: 1.25;
+
     display: -webkit-box;
     max-height: 2.5em;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    line-height: 1.25;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 
 .mobile-header-left {
